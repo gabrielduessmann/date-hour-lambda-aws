@@ -7,6 +7,10 @@ In this project, I've used the cloud provider AWS and Lambda service.
 
 I created a function to run Java 11 and then created a simple Java project with Maven.
 
+## Run with Docker
+Run the following maven command:
+> `mvn compile dependency:copy-dependencies -DincludeScope=runtime`
+
 ### Lambda Java Application
 The application expects a request parameter `region` and returns the local date and time of the informed region.
 
